@@ -1,0 +1,27 @@
+{
+  "name": "async_await",
+  "version": "1.0.0",
+  "description": "",
+  "main": "`./dist/bundle.js`",
+  "scripts": {
+    "start": "node_modules/.bin/webpack-dev-server",
+    "build": "node_modules/.bin/webpack",
+    "build:watch": "node_modules/.bin/webpack -w",
+    "clean": "rm ./dist/*"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "d3": "^4.8.0",
+    "immutable": "^3.8.1"
+  },
+  "devDependencies": {
+    "@types/d3": "^4.8.0",
+    "@types/immutable": "^3.8.7",
+    "source-map-loader": "^0.2.1",
+    "ts-loader": "^2.0.3",
+    "typescript": "^2.3.2",
+    "webpack": "^2.5.1",
+    "webpack-dev-server": "^2.4.5"
+  }
+}

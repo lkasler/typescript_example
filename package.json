@@ -8,7 +8,8 @@
     "build": "node_modules/.bin/webpack",
     "build:watch": "node_modules/.bin/webpack -w",
     "run": "node_modules/.bin/webpack -w && node_modules/.bin/webpack-dev-server",
-    "clean": "rm ./dist/*"
+    "clean": "rm ./dist/*",
+    "test": "node ./dist/bundle.js"
   },
   "author": "",
   "license": "ISC",

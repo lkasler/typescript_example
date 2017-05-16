@@ -15,7 +15,7 @@ function longProcess(cycleWait : number) {
 function main() {
     let result = longProcess(2000000000).then((res) => console.log(`Promise result: ${res}`)).catch((error) => console.log(`Error was: ${error}`));
 
-    console.log("I'm done from main");
+    console.log("I'm done from main dddd");
 }
 
 main();

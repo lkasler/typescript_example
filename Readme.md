@@ -50,6 +50,14 @@ Modify:
   ]
 }
 
+"lib": [
+    "ES5",
+    "ES2015",
+    "DOM",
+    "ScriptHost"],
+
+
+
 * Webpack
 
 Create webpack.config.js in the root folder
@@ -58,8 +66,13 @@ const path = require("path");
 module.exports = {
     entry: "./src/index.ts",
     output: {
-        filename: "./dist/bundle.js"
-    },
+    path: join(__dirname, 'dist'),
+    filename: 'bundle.js',
+
+    // Bundle absolute resource paths in the source-map,
+    // so VSCode can match the source file.
+    devtoolModuleFilenameTemplate: '[absolute-resource-path]'
+  },
     // Enable sourcemaps for debugging webpack's output.
     devtool: "source-map",
     resolve: {
